@@ -1,4 +1,4 @@
-import { conctDataBase } from "../conect-data/conectDB.js";
+import conctDataBase from "../conect-data/conectDB.js";
 import { ObjectId } from "mongodb";
 
 class Rotas {

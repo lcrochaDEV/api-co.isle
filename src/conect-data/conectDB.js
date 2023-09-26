@@ -3,7 +3,7 @@ import { MongoClient } from "mongodb";
 const DATABASE = process.env.CONECT_DATABASE;
 const coIsleDB = new MongoClient(DATABASE);
 
-let conctDataBase 
+let conctDataBase
   try {
     await coIsleDB.connect();
     const db = coIsleDB.db("CoIsle");
@@ -13,4 +13,4 @@ let conctDataBase
   } catch (erro) {
     console.log(`Erro de Conexão: ${erro}`);
   }
-export { conctDataBase };
+export default conctDataBase;
