@@ -1,7 +1,7 @@
 import express from 'express';
 import 'dotenv/config';
 import '../conect-data/conectDB.js';
-import conctDataBase from '../roteamento/rotas.js';
+import connectDataBase from '../roteamento/rotas.js';
 import cors from 'cors';
 
 const HOST = process.env.SERVER_IP;
@@ -18,7 +18,7 @@ app.get('/', (req,  res) => {
   res.send('Página Home');
 });
 
-app.use("/home", conctDataBase);
+app.use("/home", connectDataBase);
 
 app.listen(PORT, HOST, () => {
   console.log(`Servidor executando na URL http://${HOST}:${PORT}`);
