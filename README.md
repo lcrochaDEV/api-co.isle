@@ -1,5 +1,12 @@
 # API Para Requisições(CRUD) em Banco de Dados MongoDB
 
+#### Criando Banco de dados Mango DB
+
+sudo docker run --name mongoDB -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=admin mongo
+
+#### Acesso ao mongo
+sudo docker exec -it mongoDB mongosh -u admin -p admin
+
 #### Comando Docker para iniciar contêiner automaticamente.
 
 sudo docker update --restart always mongoDB
